@@ -1,0 +1,1 @@
+import { ChangeDetectionStrategy, Component } from '@angular/core';@Component({  selector: 'app-header',  templateUrl: './headerWidget.component.html',  styleUrls: ['./headerWidget.component.css'],  changeDetection: ChangeDetectionStrategy.OnPush})export class HeaderWidgetComponent {}

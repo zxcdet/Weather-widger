@@ -1,0 +1,1 @@
+import { Pipe, PipeTransform } from '@angular/core';@Pipe({  name: 'windConverted'})export class WindConverterPipe implements PipeTransform {  public wind!: number  transform(value: number) {    this.wind = Math.round(value * 3.6)    return this.wind  }}

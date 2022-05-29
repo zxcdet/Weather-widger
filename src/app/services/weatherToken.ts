@@ -1,0 +1,1 @@
+import { InjectionToken } from '@angular/core';import { LocalStorageService } from './localStorage.service';import { LocalStorageInterface } from '../types/localStorage.interface';export const WEATHER_TOKEN = new InjectionToken<LocalStorageInterface>("Weather", {  factory: () => new LocalStorageService()})

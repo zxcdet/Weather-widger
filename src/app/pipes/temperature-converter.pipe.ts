@@ -1,0 +1,1 @@
+import { Pipe, PipeTransform } from '@angular/core';@Pipe({  name: 'temperatureConverter'})export class TemperatureConverterPipe implements PipeTransform {  public temp!: number  transform(value: number) {    this.temp = Math.round(value - 273.15)    return this.temp  }}
